@@ -87,7 +87,7 @@ export default function Index() {
                 className="w-32 h-36 object-contain pt-3 mx-auto mt-3"
               />
                             <CardContent className="flex flex-col px-8 pt-5 pb-8">
-                                                                <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-luxury-gold via-luxury-gold-light to-luxury-gold-lighter leading-9 mx-auto">
+                <h1 className="text-3xl font-bold text-transparent bg-clip-text leading-9 mx-auto" style={{backgroundColor: '#bfaf53'}}>
                   Maven Insiders
                 </h1>
                                 <div className="text-center mb-5 text-white text-3xl font-bold leading-9 pb-1">
