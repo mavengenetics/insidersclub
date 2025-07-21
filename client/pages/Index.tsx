@@ -121,7 +121,14 @@ export default function Index() {
                 </div>
 
                 {!isSubmitted ? (
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form
+                    name="maven-insiders"
+                    method="POST"
+                    data-netlify="true"
+                    onSubmit={handleSubmit}
+                    className="space-y-6"
+                  >
+                    <input type="hidden" name="form-name" value="maven-insiders" />
                     <div>
                       <Label
                         htmlFor="name"
@@ -131,6 +138,7 @@ export default function Index() {
                       </Label>
                       <Input
                         id="name"
+                        name="name"
                         type="text"
                         value={formData.name}
                         onChange={(e) =>
@@ -151,6 +159,7 @@ export default function Index() {
                       </Label>
                       <Input
                         id="email"
+                        name="email"
                         type="email"
                         value={formData.email}
                         onChange={(e) =>
@@ -171,6 +180,7 @@ export default function Index() {
                       </Label>
                       <Input
                         id="location"
+                        name="location"
                         type="text"
                         value={formData.location}
                         onChange={(e) =>
@@ -190,11 +200,13 @@ export default function Index() {
                         Professional Category
                       </Label>
                       <Select
+                        name="category"
                         value={formData.category}
                         onValueChange={(value) =>
                           setFormData({ ...formData, category: value })
                         }
                       >
+                        <input type="hidden" name="category" value={formData.category} />
                         <SelectTrigger className="mt-2 bg-luxury-black-lighter border-luxury-black-lighter text-white focus:border-luxury-gold focus:ring-luxury-gold">
                           <SelectValue placeholder="Select your category" />
                         </SelectTrigger>
