@@ -35,7 +35,16 @@ export default function Index() {
         }} />
       </div>
 
-      <div className="relative z-10 flex min-h-screen">
+            <div className="relative z-10 flex min-h-screen">
+        {/* Centered Logo */}
+        <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F05dfbcd291304f26915d635b7312e22a%2F5e023d0eb22b48c78d960e5648951664?format=webp&width=800"
+            alt="Maven Genetics Logo"
+            className="w-32 h-32 object-contain"
+          />
+        </div>
+
                 {/* Left Section - Branding */}
         <div className="hidden lg:flex lg:w-1/2 flex-col justify-center px-12 xl:px-24 bg-black">
           <div className="max-w-lg">
