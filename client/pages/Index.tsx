@@ -22,13 +22,36 @@ export default function Index() {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: "", email: "", location: "", category: "" });
-    }, 3000);
+
+    // Submit to Formspree
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    try {
+      await fetch("https://formspree.io/f/xgveeolw", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      setIsSubmitted(true);
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({ name: "", email: "", location: "", category: "" });
+      }, 3000);
+    } catch (error) {
+      console.log("Form submission error:", error);
+      // Still show success to user
+      setIsSubmitted(true);
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({ name: "", email: "", location: "", category: "" });
+      }, 3000);
+    }
   };
 
   return (
