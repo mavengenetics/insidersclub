@@ -40,9 +40,13 @@ export default function Index() {
         <div className="hidden lg:flex lg:w-1/2 flex-col justify-center px-12 xl:px-24">
           <div className="max-w-lg">
             {/* Logo Placeholder - Replace with actual logo */}
-            <div className="mb-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-luxury-gold to-luxury-gold-light rounded-xl flex items-center justify-center mb-6">
-                <Sparkles className="w-8 h-8 text-luxury-black" />
+                        <div className="mb-8">
+              <div className="w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F05dfbcd291304f26915d635b7312e22a%2F0e4946bd21b7482bb3adff933a11c102?format=webp&width=800"
+                  alt="Maven Genetics Logo"
+                  className="w-16 h-16 object-contain"
+                />
               </div>
               <h1 className="text-4xl xl:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-luxury-gold via-luxury-gold-light to-luxury-gold-lighter leading-tight">
                 Maven Insiders
