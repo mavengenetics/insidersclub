@@ -13,7 +13,7 @@ export default {
       },
     },
     extend: {
-      colors: {
+            colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -56,6 +56,26 @@ export default {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
+        },
+        gold: {
+          50: "#fffef5",
+          100: "#fffde6",
+          200: "#fffac2",
+          300: "#fff38b",
+          400: "#ffe652",
+          500: "#ffda2b",
+          600: "#e6c200",
+          700: "#d4af00",
+          800: "#b8980a",
+          900: "#997c0f",
+        },
+        luxury: {
+          black: "#0d0d0d",
+          "black-light": "#1a1a1a",
+          "black-lighter": "#2d2d2d",
+          gold: "#d4af00",
+          "gold-light": "#e6c200",
+          "gold-lighter": "#ffda2b",
         },
       },
       borderRadius: {
