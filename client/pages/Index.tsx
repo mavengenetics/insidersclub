@@ -90,7 +90,7 @@ export default function Index() {
                 <h1 className="text-3xl font-bold text-transparent bg-clip-text leading-9 mx-auto" style={{backgroundColor: '#bfaf53'}}>
                   Maven Insiders
                 </h1>
-                                <div className="text-center mb-5 text-white text-3xl font-bold leading-9 pb-1">
+                <div className="text-center mb-3 text-white text-2xl font-bold leading-9 pb-1">
                   Get Access Now
                 </div>
 
