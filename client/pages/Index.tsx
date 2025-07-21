@@ -97,7 +97,7 @@ export default function Index() {
                 {!isSubmitted ? (
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
-                      <Label htmlFor="name" className="text-luxury-gold font-medium">
+                      <Label htmlFor="name" className="text-white font-semibold">
                         Full Name
                       </Label>
                       <Input
@@ -112,7 +112,7 @@ export default function Index() {
                     </div>
 
                     <div>
-                      <Label htmlFor="email" className="text-luxury-gold font-medium">
+                      <Label htmlFor="email" className="text-white font-semibold">
                         Email Address
                       </Label>
                       <Input
@@ -127,7 +127,7 @@ export default function Index() {
                     </div>
 
                     <div>
-                      <Label htmlFor="location" className="text-luxury-gold font-medium">
+                      <Label htmlFor="location" className="text-white font-semibold">
                         Location
                       </Label>
                       <Input
@@ -142,7 +142,7 @@ export default function Index() {
                     </div>
 
                     <div>
-                      <Label htmlFor="category" className="text-luxury-gold font-medium">
+                      <Label htmlFor="category" className="text-white font-semibold">
                         Professional Category
                       </Label>
                       <Select value={formData.category} onValueChange={(value) => setFormData({ ...formData, category: value })}>
