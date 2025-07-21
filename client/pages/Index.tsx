@@ -51,8 +51,13 @@ export default function Index() {
             {/* Logo Placeholder - Replace with actual logo */}
             <div className="mb-8">
               <h1
-                className="text-5xl font-bold text-transparent bg-clip-text leading-tight"
-                style={{ backgroundColor: "#bfaf53" }}
+                className="text-5xl font-bold leading-tight"
+                style={{
+                  background: "linear-gradient(to right, #d4af00, #e6c200, #ffda2b)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text"
+                }}
               >
                 Maven Insiders
               </h1>
