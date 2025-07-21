@@ -227,7 +227,11 @@ export default function Index() {
                           setFormData({ ...formData, category: value })
                         }
                       >
-                        <input type="hidden" name="category" value={formData.category} />
+                        <input
+                          type="hidden"
+                          name="category"
+                          value={formData.category}
+                        />
                         <SelectTrigger className="mt-2 bg-luxury-black-lighter border-luxury-black-lighter text-white focus:border-luxury-gold focus:ring-luxury-gold">
                           <SelectValue placeholder="Select your category" />
                         </SelectTrigger>
