@@ -35,9 +35,9 @@ export default function Index() {
         }} />
       </div>
 
-            <div className="relative z-10 flex min-h-screen">
+                  <div className="relative z-10 flex min-h-screen bg-black">
                         {/* Left Section - Branding */}
-        <div className="hidden lg:flex lg:w-1/2 flex-col justify-center px-12 xl:px-24 bg-black">
+                <div className="hidden lg:flex lg:w-1/2 flex-col justify-center px-12 xl:px-24 bg-black ml-9">
           <div className="max-w-lg">
             {/* Logo Placeholder - Replace with actual logo */}
                                     <div className="mb-8">
@@ -46,11 +46,8 @@ export default function Index() {
               </h1>
             </div>
 
-            <div className="space-y-6">
-              <h2 className="text-2xl xl:text-3xl font-semibold text-white">
-                Exclusive Access to Tomorrow's Innovation
-              </h2>
-              <p className="text-lg text-gray-300 leading-relaxed">
+                        <div className="space-y-6">
+              <p className="text-lg text-gray-300 leading-relaxed mt-6">
                 Join an elite community of forward-thinking professionals, entrepreneurs, and innovators who shape the future of technology.
               </p>
               
@@ -72,21 +69,21 @@ export default function Index() {
         </div>
 
                 {/* Right Section - Form */}
-                <div className="w-full flex items-center justify-center px-6 bg-black">
+                        <div className="w-full flex items-center justify-center px-5 bg-black">
           <div className="w-full max-w-md">
             
 
-                        <Card className="border-0 bg-luxury-black-light/50 backdrop-blur-xl shadow-2xl flex flex-col sm:block">
-              <img
+                                    <Card className="border-0 bg-luxury-black-light/50 backdrop-blur-xl shadow-2xl flex flex-col">
+                            <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F05dfbcd291304f26915d635b7312e22a%2F5e023d0eb22b48c78d960e5648951664?format=webp&width=800"
                 alt="Maven Genetics Logo"
-                className="w-32 h-32 object-contain mx-auto sm:mx-0"
+                className="w-32 h-32 object-contain pt-3 mx-auto mt-3"
               />
-              <CardContent className="p-8 flex flex-col sm:block">
-                                                <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-luxury-gold via-luxury-gold-light to-luxury-gold-lighter leading-9 mx-auto sm:mx-0">
+                            <CardContent className="flex flex-col px-8 pt-5 pb-8">
+                                                                <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-luxury-gold via-luxury-gold-light to-luxury-gold-lighter leading-9 mx-auto">
                   Maven Insiders
                 </h1>
-                <div className="text-center mb-8 text-white text-3xl font-bold leading-9 pb-2">
+                                <div className="text-center mb-5 text-white text-3xl font-bold leading-9 pb-1">
                   Get Access Now
                 </div>
 
@@ -191,9 +188,6 @@ export default function Index() {
                     </p>
                                     </div>
                 )}
-                <p className="text-center text-sm text-gray-500 mt-6">
-                  By submitting, you agree to our terms and privacy policy
-                </p>
               </CardContent>
             </Card>
           </div>
