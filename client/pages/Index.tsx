@@ -12,7 +12,7 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { Sparkles, Check } from "lucide-react";
 
-// Updated with simplified Netlify build
+// Updated with Netlify Forms support
 export default function Index() {
   const [formData, setFormData] = useState({
     name: "",
