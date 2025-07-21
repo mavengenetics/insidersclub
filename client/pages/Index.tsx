@@ -72,7 +72,7 @@ export default function Index() {
         </div>
 
                 {/* Right Section - Form */}
-        <div className="w-full lg:w-1/2 flex items-center justify-center px-6 sm:px-12 bg-black">
+                <div className="w-full flex items-center justify-center px-6 bg-black">
           <div className="w-full max-w-md">
             {/* Mobile Logo */}
                         <div className="lg:hidden text-center mb-8">
