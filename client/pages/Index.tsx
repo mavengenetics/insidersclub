@@ -41,7 +41,7 @@ export default function Index() {
           <div className="max-w-lg">
             {/* Logo Placeholder - Replace with actual logo */}
                                     <div className="mb-8">
-              <h1 className="text-4xl xl:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-luxury-gold via-luxury-gold-light to-luxury-gold-lighter leading-tight">
+              <h1 className="text-5xl font-bold text-transparent bg-clip-text leading-tight" style={{backgroundColor: '#bfaf53'}}>
                 Maven Insiders
               </h1>
             </div>
