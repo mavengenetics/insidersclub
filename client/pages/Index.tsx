@@ -53,10 +53,11 @@ export default function Index() {
               <h1
                 className="text-5xl font-bold leading-tight"
                 style={{
-                  background: "linear-gradient(to right, #d4af00, #e6c200, #ffda2b)",
+                  background:
+                    "linear-gradient(to right, #d4af00, #e6c200, #ffda2b)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
-                  backgroundClip: "text"
+                  backgroundClip: "text",
                 }}
               >
                 Maven Insiders
@@ -108,10 +109,11 @@ export default function Index() {
                 <h1
                   className="text-3xl font-bold leading-9 mx-auto"
                   style={{
-                    background: "linear-gradient(to right, #d4af00, #e6c200, #ffda2b)",
+                    background:
+                      "linear-gradient(to right, #d4af00, #e6c200, #ffda2b)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
-                    backgroundClip: "text"
+                    backgroundClip: "text",
                   }}
                 >
                   Maven Insiders
