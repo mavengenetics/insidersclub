@@ -177,7 +177,8 @@ export default function Index() {
 
                     <Button
                       type="submit"
-                      className="w-full bg-gradient-to-r from-luxury-gold to-luxury-gold-light hover:from-luxury-gold-light hover:to-luxury-gold text-luxury-black font-semibold py-3 text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-luxury-gold/25"
+                      className="w-full text-luxury-black font-semibold py-3 text-sm transition-all duration-300 transform hover:scale-105 shadow-lg opacity-95"
+                      style={{backgroundColor: 'rgba(200, 184, 87, 1)'}}
                     >
                       Submit Application
                     </Button>
