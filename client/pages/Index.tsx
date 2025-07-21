@@ -83,7 +83,10 @@ export default function Index() {
                 className="w-32 h-32 object-contain mx-auto sm:mx-0"
               />
               <CardContent className="p-8 flex flex-col sm:block">
-                                <div className="text-center mb-8 text-white text-3xl font-bold leading-9 pb-2">
+                                                <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-luxury-gold via-luxury-gold-light to-luxury-gold-lighter leading-9 mx-auto sm:mx-0">
+                  Maven Insiders
+                </h1>
+                <div className="text-center mb-8 text-white text-3xl font-bold leading-9 pb-2">
                   Get Access Now
                 </div>
 
