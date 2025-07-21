@@ -106,8 +106,13 @@ export default function Index() {
               />
               <CardContent className="flex flex-col px-8 pt-5 pb-8">
                 <h1
-                  className="text-3xl font-bold text-transparent bg-clip-text leading-9 mx-auto"
-                  style={{ backgroundColor: "#bfaf53" }}
+                  className="text-3xl font-bold leading-9 mx-auto"
+                  style={{
+                    background: "linear-gradient(to right, #d4af00, #e6c200, #ffda2b)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text"
+                  }}
                 >
                   Maven Insiders
                 </h1>
