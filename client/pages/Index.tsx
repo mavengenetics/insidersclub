@@ -36,18 +36,11 @@ export default function Index() {
       </div>
 
       <div className="relative z-10 flex min-h-screen">
-        {/* Left Section - Branding */}
-        <div className="hidden lg:flex lg:w-1/2 flex-col justify-center px-12 xl:px-24">
+                {/* Left Section - Branding */}
+        <div className="hidden lg:flex lg:w-1/2 flex-col justify-center px-12 xl:px-24 bg-black">
           <div className="max-w-lg">
             {/* Logo Placeholder - Replace with actual logo */}
-                        <div className="mb-8">
-              <div className="w-16 h-16 rounded-xl flex items-center justify-center mb-6">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F05dfbcd291304f26915d635b7312e22a%2F0e4946bd21b7482bb3adff933a11c102?format=webp&width=800"
-                  alt="Maven Genetics Logo"
-                  className="w-16 h-16 object-contain"
-                />
-              </div>
+                                    <div className="mb-8">
               <h1 className="text-4xl xl:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-luxury-gold via-luxury-gold-light to-luxury-gold-lighter leading-tight">
                 Maven Insiders
               </h1>
@@ -78,8 +71,8 @@ export default function Index() {
           </div>
         </div>
 
-        {/* Right Section - Form */}
-        <div className="w-full lg:w-1/2 flex items-center justify-center px-6 sm:px-12">
+                {/* Right Section - Form */}
+        <div className="w-full lg:w-1/2 flex items-center justify-center px-6 sm:px-12 bg-black">
           <div className="w-full max-w-md">
             {/* Mobile Logo */}
                         <div className="lg:hidden text-center mb-8">
@@ -97,13 +90,8 @@ export default function Index() {
 
             <Card className="border-0 bg-luxury-black-light/50 backdrop-blur-xl shadow-2xl">
               <CardContent className="p-8">
-                <div className="text-center mb-8">
-                  <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
-                    Get Access Now
-                  </h2>
-                  <p className="text-gray-400">
-                    Join the future of innovation
-                  </p>
+                                <div className="text-center mb-8 text-white text-3xl font-bold leading-9 pb-2">
+                  Get Access Now
                 </div>
 
                 {!isSubmitted ? (
