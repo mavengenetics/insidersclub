@@ -7,6 +7,7 @@ Since you're experiencing Git/build issues, here's the **fastest way** to deploy
 ### Option 1: Manual File Upload (100% Success Rate)
 
 1. **Your files are already built!** ✅
+
    ```
    dist/spa/ folder contains:
    - index.html (618B)
@@ -16,6 +17,7 @@ Since you're experiencing Git/build issues, here's the **fastest way** to deploy
    ```
 
 2. **Zip the dist/spa folder**
+
    - Right-click `dist/spa` folder → "Compress to ZIP"
    - Or use: `zip -r maven-insiders.zip dist/spa`
 
@@ -29,7 +31,9 @@ Since you're experiencing Git/build issues, here's the **fastest way** to deploy
 If you want to use Git deployment later, here are the fixes:
 
 ### Fix 1: Repository Root Structure
+
 Make sure your repository has this structure:
+
 ```
 repository-root/
 ├── package.json          ← Must be in root
@@ -43,6 +47,7 @@ repository-root/
 ### Fix 2: Alternative netlify.toml Configurations
 
 **Option A: Basic Config**
+
 ```toml
 [build]
   command = "npm install && npm run build:client"
@@ -50,6 +55,7 @@ repository-root/
 ```
 
 **Option B: With Node Version**
+
 ```toml
 [build]
   command = "npm ci && npm run build:client"
@@ -60,6 +66,7 @@ repository-root/
 ```
 
 **Option C: Step-by-step Commands**
+
 ```toml
 [build]
   command = "npm ci && npm run typecheck && npm run build:client"
@@ -69,6 +76,7 @@ repository-root/
 ### Fix 3: Manual Repository Setup
 
 1. **Create a fresh repository:**
+
    ```bash
    # Create new repo on GitHub
    git init
@@ -95,7 +103,7 @@ repository-root/
 ✅ **Contact form** with validation and success states  
 ✅ **Mobile-optimized** interface  
 ✅ **Cannabis-focused content** and messaging  
-✅ **Fast loading** optimized assets  
+✅ **Fast loading** optimized assets
 
 ## 🚨 QUICK DEPLOY NOW
 
@@ -109,4 +117,4 @@ You can always set up Git deployment later. Your Maven Insiders app is productio
 
 ---
 
-*Build verified ✅ | Tests passing ✅ | Assets optimized ✅ | Ready to deploy! 🚀*
+_Build verified ✅ | Tests passing ✅ | Assets optimized ✅ | Ready to deploy! 🚀_
