@@ -76,8 +76,13 @@ export default function Index() {
           <div className="w-full max-w-md">
             
 
-            <Card className="border-0 bg-luxury-black-light/50 backdrop-blur-xl shadow-2xl">
-              <CardContent className="p-8">
+                        <Card className="border-0 bg-luxury-black-light/50 backdrop-blur-xl shadow-2xl flex flex-col sm:block">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F05dfbcd291304f26915d635b7312e22a%2F5e023d0eb22b48c78d960e5648951664?format=webp&width=800"
+                alt="Maven Genetics Logo"
+                className="w-32 h-32 object-contain mx-auto sm:mx-0"
+              />
+              <CardContent className="p-8 flex flex-col sm:block">
                                 <div className="text-center mb-8 text-white text-3xl font-bold leading-9 pb-2">
                   Get Access Now
                 </div>
