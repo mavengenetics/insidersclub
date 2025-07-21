@@ -74,19 +74,7 @@ export default function Index() {
                 {/* Right Section - Form */}
                 <div className="w-full flex items-center justify-center px-6 bg-black">
           <div className="w-full max-w-md">
-            {/* Mobile Logo */}
-                        <div className="lg:hidden text-center mb-8">
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F05dfbcd291304f26915d635b7312e22a%2F0e4946bd21b7482bb3adff933a11c102?format=webp&width=800"
-                  alt="Maven Genetics Logo"
-                  className="w-12 h-12 object-contain"
-                />
-              </div>
-              <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-luxury-gold via-luxury-gold-light to-luxury-gold-lighter">
-                Maven Insiders
-              </h1>
-            </div>
+            
 
             <Card className="border-0 bg-luxury-black-light/50 backdrop-blur-xl shadow-2xl">
               <CardContent className="p-8">
