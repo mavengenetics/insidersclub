@@ -189,14 +189,13 @@ export default function Index() {
                     <p className="text-gray-400">
                       We'll review your application and get back to you within 48 hours.
                     </p>
-                  </div>
+                                    </div>
                 )}
+                <p className="text-center text-sm text-gray-500 mt-6">
+                  By submitting, you agree to our terms and privacy policy
+                </p>
               </CardContent>
             </Card>
-
-            <p className="text-center text-sm text-gray-500 mt-6">
-              By submitting, you agree to our terms and privacy policy
-            </p>
           </div>
         </div>
       </div>
