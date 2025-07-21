@@ -57,14 +57,13 @@ export default function Index() {
               
               <div className="space-y-4 pt-6">
                 {[
-                  "Curated tech insights & trends",
-                  "Exclusive networking events",
-                  "Early access to innovations",
-                  "Expert-led workshops"
+                  "Weekly Insiders Newsletter",
+                  "Exclusive Discounts",
+                  "First Access to Product Drops"
                 ].map((feature, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-luxury-gold rounded-full"></div>
-                    <span className="text-gray-300">{feature}</span>
+                    <span className="text-white font-semibold">{feature}</span>
                   </div>
                 ))}
               </div>
