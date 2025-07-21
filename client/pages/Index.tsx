@@ -53,11 +53,7 @@ export default function Index() {
               <h1
                 className="text-5xl font-bold leading-tight"
                 style={{
-                  background:
-                    "linear-gradient(to right, #d4af00, #e6c200, #ffda2b)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
+                  color: "#e5c354",
                 }}
               >
                 Maven Insiders
@@ -114,6 +110,7 @@ export default function Index() {
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
+                    color: "#e5c354",
                   }}
                 >
                   Maven Insiders
@@ -250,7 +247,7 @@ export default function Index() {
                     <Button
                       type="submit"
                       className="w-full text-luxury-black font-semibold py-3 text-sm transition-all duration-300 transform hover:scale-105 shadow-lg"
-                      style={{ backgroundColor: "rgba(200, 184, 87, 1)" }}
+                      style={{ backgroundColor: "#e5c354" }}
                     >
                       Submit Application
                     </Button>
