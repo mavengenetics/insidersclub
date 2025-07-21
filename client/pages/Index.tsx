@@ -67,8 +67,12 @@ export default function Index() {
                   </div>
                 ))}
               </div>
-            </div>
           </div>
+          <div className="flex items-center space-x-3 mt-4">
+            <div className="w-2 h-2 bg-luxury-gold rounded-full"></div>
+            <span className="text-white font-semibold">Special Event Access</span>
+          </div>
+        </div>
         </div>
 
                 {/* Right Section - Form */}
