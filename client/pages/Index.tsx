@@ -47,8 +47,12 @@ export default function Index() {
             </div>
 
                         <div className="space-y-6">
-              <p className="text-lg text-gray-300 leading-relaxed mt-6">
-                Join an elite community of forward-thinking professionals, entrepreneurs, and innovators who shape the future of technology.
+              <p className="text-lg text-white font-bold leading-5 pb-1.5 mb-1.5">
+                <div>
+                  <b>
+                    Join an elite community at the forefront of cannabis culture.
+                  </b>
+                </div>
               </p>
               
               <div className="space-y-4 pt-6">
