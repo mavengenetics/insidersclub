@@ -3,11 +3,13 @@
 ## 🚀 SIMPLE DEPLOYMENT STEPS
 
 ### 1. UPLOAD TO GITHUB
+
 - Create new repo: `maven-insiders`
 - Upload ALL files from this `github-deploy/` folder
 - Commit to main branch
 
 ### 2. NETLIFY SETTINGS
+
 **Copy these EXACT settings:**
 
 - **Build command:** `npm install --legacy-peer-deps && npm run build`
@@ -16,6 +18,7 @@
 - **Node version:** 18
 
 ### 3. DEPLOY
+
 - Connect GitHub repo to Netlify
 - Use above settings
 - Deploy
@@ -23,7 +26,7 @@
 ## ✅ WHAT WORKS
 
 - ✅ Cannabis community landing page
-- ✅ Black/gold luxury design  
+- ✅ Black/gold luxury design
 - ✅ Form submissions to Formspree
 - ✅ Mobile responsive
 - ✅ All dependencies compatible
