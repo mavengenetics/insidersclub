@@ -206,46 +206,28 @@ export default function Index() {
                         </SelectTrigger>
                         <SelectContent className="bg-luxury-black-lighter border-luxury-black-lighter">
                           <SelectItem
-                            value="entrepreneur"
+                            value="budtender"
                             className="text-white focus:bg-luxury-black focus:text-luxury-gold"
                           >
-                            Entrepreneur
+                            Budtender
                           </SelectItem>
                           <SelectItem
-                            value="investor"
+                            value="connoisseur"
                             className="text-white focus:bg-luxury-black focus:text-luxury-gold"
                           >
-                            Investor
+                            Connoisseur
                           </SelectItem>
                           <SelectItem
-                            value="developer"
+                            value="insider"
                             className="text-white focus:bg-luxury-black focus:text-luxury-gold"
                           >
-                            Developer
+                            Insider
                           </SelectItem>
                           <SelectItem
-                            value="executive"
+                            value="creator"
                             className="text-white focus:bg-luxury-black focus:text-luxury-gold"
                           >
-                            Executive
-                          </SelectItem>
-                          <SelectItem
-                            value="consultant"
-                            className="text-white focus:bg-luxury-black focus:text-luxury-gold"
-                          >
-                            Consultant
-                          </SelectItem>
-                          <SelectItem
-                            value="researcher"
-                            className="text-white focus:bg-luxury-black focus:text-luxury-gold"
-                          >
-                            Researcher
-                          </SelectItem>
-                          <SelectItem
-                            value="other"
-                            className="text-white focus:bg-luxury-black focus:text-luxury-gold"
-                          >
-                            Other
+                            Creator
                           </SelectItem>
                         </SelectContent>
                       </Select>
