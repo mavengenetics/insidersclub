@@ -89,15 +89,15 @@ export default function Index() {
                 >
                   FEED THE MUSE W/ MAVEN
                 </h1>
-                <h2 className="text-lg font-bold leading-9 mx-auto text-white">
-                  Show Case Connoisseurs!
+                <h2 className="text-base font-bold leading-[30px] mx-auto text-white">
+                  Showcase Connoisseurs!
                 </h2>
-                <div className="text-center mb-3">
+                <div className="text-center mb-1.5">
                   <div className="text-white text-xs font-bold leading-[15px] mb-2">
                     <div></div>
                   </div>
                   <div className="text-white text-xs font-medium leading-[15px] mb-1">
-                    Exclusive Maven merch shipped to you
+                    Get Exclusive Maven merch
                   </div>
                   <div className="text-white text-xs font-medium leading-[15px] mb-1">
                     Invites to private Maven events
@@ -117,7 +117,7 @@ export default function Index() {
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     onSubmit={handleSubmit}
-                    className="space-y-6"
+                    className="space-y-3"
                   >
                     <input
                       type="hidden"
