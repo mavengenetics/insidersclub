@@ -25,17 +25,15 @@ export default function Index() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Submit to Formspree
+    // Submit to Netlify
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
 
     try {
-      await fetch("https://formspree.io/f/xgveeolw", {
+      await fetch("/", {
         method: "POST",
-        body: formData,
-        headers: {
-          Accept: "application/json",
-        },
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as any).toString(),
       });
 
       setIsSubmitted(true);
@@ -102,7 +100,7 @@ export default function Index() {
                     color: "#e5c354",
                   }}
                 >
-                  <span style={{color: "rgb(255, 255, 255)"}}>Show Case Connoisseurs!</span>
+                  <span className="text-white">Show Case Connoisseurs!</span>
                 </h2>
                 <div className="text-center mb-3">
                   <div className="text-white text-xs font-bold leading-[15px] mb-2">
@@ -116,11 +114,19 @@ export default function Index() {
 
                 {!isSubmitted ? (
                   <form
-                    action="https://formspree.io/f/xgveeolw"
+                    name="maven-insiders"
                     method="POST"
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field"
                     onSubmit={handleSubmit}
                     className="space-y-6"
                   >
+                    <input type="hidden" name="form-name" value="maven-insiders" />
+                    <div style={{ display: 'none' }}>
+                      <label>
+                        Don't fill this out if you're human: <input name="bot-field" />
+                      </label>
+                    </div>
                     <div>
                       <Label
                         htmlFor="name"
