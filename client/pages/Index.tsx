@@ -76,23 +76,15 @@ export default function Index() {
                 className="w-32 h-36 object-contain pt-1.5 mx-auto mt-1.5"
               />
               <CardContent className="flex flex-col px-8 pt-5">
-                <h1
-                  className="text-xl font-bold mx-auto"
-                  style={{
-                    background:
-                      "linear-gradient(to right, #d4af00, #e6c200, #ffda2b)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text",
-                    color: "#e5c354",
-                  }}
-                >
-                  FEED THE MUSE W/ MAVEN
-                </h1>
                 <h2 className="text-base font-bold leading-[30px] mx-auto text-white">
-                  Showcase Connoisseurs!
+                  <span style={{color: "rgb(208, 180, 93)"}}>
+                    Showcase Connoisseurs!
+                  </span>
                 </h2>
                 <div className="text-center mb-1.5">
+                  <div className="text-white text-xs font-medium leading-[15px]">
+                    <b>Your voice matters — join the Maven circle</b>
+                  </div>
                   <div className="text-white text-xs font-bold leading-[15px] mb-2">
                     <div></div>
                   </div>
@@ -104,9 +96,6 @@ export default function Index() {
                   </div>
                   <div className="text-white text-xs font-medium leading-[15px] mb-1">
                     Early access to new phenos and samplings
-                  </div>
-                  <div className="text-white text-xs font-medium leading-[15px]">
-                    Your voice matters — join the Maven circle
                   </div>
                 </div>
 
