@@ -218,12 +218,6 @@ export default function Index() {
                             Connoisseur
                           </SelectItem>
                           <SelectItem
-                            value="insider"
-                            className="text-white focus:bg-luxury-black focus:text-luxury-gold"
-                          >
-                            Insider
-                          </SelectItem>
-                          <SelectItem
                             value="creator"
                             className="text-white focus:bg-luxury-black focus:text-luxury-gold"
                           >
@@ -235,7 +229,7 @@ export default function Index() {
 
                     <Button
                       type="submit"
-                      className="w-full text-luxury-black font-semibold py-3 text-sm transition-all duration-300 transform hover:scale-105 shadow-lg"
+                      className="w-full text-luxury-black font-semibold py-3 text-sm transition-all duration-300 transform hover:scale-105 shadow-lg mt-1.5"
                       style={{ backgroundColor: "#d0b45d" }}
                     >
                       Submit Application
