@@ -89,18 +89,8 @@ export default function Index() {
                 >
                   FEED THE MUSE W/ MAVEN
                 </h1>
-                <h2
-                  className="text-lg font-bold leading-9 mx-auto"
-                  style={{
-                    background:
-                      "linear-gradient(to right, #d4af00, #e6c200, #ffda2b)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text",
-                    color: "#e5c354",
-                  }}
-                >
-                  <span className="text-white">Show Case Connoisseurs!</span>
+                <h2 className="text-lg font-bold leading-9 mx-auto text-white">
+                  Show Case Connoisseurs!
                 </h2>
                 <div className="text-center mb-3">
                   <div className="text-white text-xs font-bold leading-[15px] mb-2">
