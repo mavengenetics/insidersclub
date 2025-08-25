@@ -187,7 +187,7 @@ export default function Index() {
                         htmlFor="category"
                         className="text-white font-semibold"
                       >
-                        Professional Category
+                        Select Option
                       </Label>
                       <Select
                         name="category"
@@ -202,7 +202,7 @@ export default function Index() {
                           value={formData.category}
                         />
                         <SelectTrigger className="mt-2 bg-luxury-black-lighter border-luxury-black-lighter text-white focus:border-luxury-gold focus:ring-luxury-gold">
-                          <SelectValue placeholder="Select your category" />
+                          <SelectValue placeholder="Choose your role" />
                         </SelectTrigger>
                         <SelectContent className="bg-luxury-black-lighter border-luxury-black-lighter">
                           <SelectItem
