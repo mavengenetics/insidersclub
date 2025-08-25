@@ -77,9 +77,9 @@ export default function Index() {
                 alt="Maven Genetics Logo"
                 className="w-32 h-36 object-contain pt-1.5 mx-auto mt-1.5"
               />
-              <CardContent className="flex flex-col px-8 pt-5 pb-8">
+              <CardContent className="flex flex-col px-8 pt-5">
                 <h1
-                  className="text-xl font-bold leading-6 mx-auto"
+                  className="text-xl font-bold mx-auto"
                   style={{
                     background:
                       "linear-gradient(to right, #d4af00, #e6c200, #ffda2b)",
