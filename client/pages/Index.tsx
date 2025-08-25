@@ -119,7 +119,7 @@ export default function Index() {
                 >
                   Show Case Connoisseurs!
                 </h1>
-                <div className="text-center mb-3 text-xs leading-[18px]">
+                <div className="text-center mb-3 text-xs leading-[15px]">
                   <div className="text-white text-base font-bold leading-5 mb-2">
                     <div></div>
                   </div>
