@@ -96,10 +96,18 @@ export default function Index() {
                   <div className="text-white text-xs font-bold leading-[15px] mb-2">
                     <div></div>
                   </div>
-                  <div className="text-white text-xs font-medium leading-[15px] mb-1">Exclusive Maven merch shipped to you</div>
-                  <div className="text-white text-xs font-medium leading-[15px] mb-1">Invites to private Maven events</div>
-                  <div className="text-white text-xs font-medium leading-[15px] mb-1">Early access to new phenos and samplings</div>
-                  <div className="text-white text-xs font-medium leading-[15px]">Your voice matters — join the Maven circle</div>
+                  <div className="text-white text-xs font-medium leading-[15px] mb-1">
+                    Exclusive Maven merch shipped to you
+                  </div>
+                  <div className="text-white text-xs font-medium leading-[15px] mb-1">
+                    Invites to private Maven events
+                  </div>
+                  <div className="text-white text-xs font-medium leading-[15px] mb-1">
+                    Early access to new phenos and samplings
+                  </div>
+                  <div className="text-white text-xs font-medium leading-[15px]">
+                    Your voice matters — join the Maven circle
+                  </div>
                 </div>
 
                 {!isSubmitted ? (
@@ -111,10 +119,15 @@ export default function Index() {
                     onSubmit={handleSubmit}
                     className="space-y-6"
                   >
-                    <input type="hidden" name="form-name" value="maven-insiders" />
-                    <div style={{ display: 'none' }}>
+                    <input
+                      type="hidden"
+                      name="form-name"
+                      value="maven-insiders"
+                    />
+                    <div style={{ display: "none" }}>
                       <label>
-                        Don't fill this out if you're human: <input name="bot-field" />
+                        Don't fill this out if you're human:{" "}
+                        <input name="bot-field" />
                       </label>
                     </div>
                     <div>
