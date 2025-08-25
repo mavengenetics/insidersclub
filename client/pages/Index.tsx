@@ -138,12 +138,12 @@ export default function Index() {
                 >
                   Show Case Connoisseurs!
                 </h1>
-                <div className="text-center mb-3 text-white text-xl font-bold leading-6 pb-1 space-y-1">
-                  <div>FEED THE MUSE WITH MAVEN</div>
-                  <div>Exclusive Maven merch shipped to you</div>
-                  <div>Invites to private Maven events</div>
-                  <div>Early access to new phenos and samplings</div>
-                  <div>Your voice matters — join the Maven circle</div>
+                <div className="text-center mb-3">
+                  <div className="text-white text-xl font-bold mb-2">FEED THE MUSE WITH MAVEN</div>
+                  <div className="text-white text-lg font-medium mb-1">Exclusive Maven merch shipped to you</div>
+                  <div className="text-white text-lg font-medium mb-1">Invites to private Maven events</div>
+                  <div className="text-white text-lg font-medium mb-1">Early access to new phenos and samplings</div>
+                  <div className="text-white text-lg font-medium">Your voice matters — join the Maven circle</div>
                 </div>
 
                 {!isSubmitted ? (
