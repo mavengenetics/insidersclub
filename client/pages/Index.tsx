@@ -69,44 +69,29 @@ export default function Index() {
       </div>
 
       <div className="relative z-10 flex min-h-screen bg-black">
-        {/* Left Section - Branding */}
-        <div className="hidden lg:flex lg:w-1/2 flex-col justify-center px-5 bg-black" style={{marginLeft: '50px'}}>
-          <div className="max-w-lg">
-            {/* Logo Placeholder - Replace with actual logo */}
-            <div className="mb-8">
-              <h1
-                className="text-4xl font-bold leading-9"
-                style={{
-                  color: "#e5c354",
-                }}
-              >
-                FEED <br />
-                THE <br />
-                MUSE <br />
-                WITH <br />
-                MAVEN
-              </h1>
-            </div>
-
-            <div className="space-y-6">
-              <p className="text-lg text-white font-bold leading-5 pb-1.5 mb-1.5">
-                <div />
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Right Section - Form */}
         <div className="w-full flex items-center justify-center px-5 bg-black">
           <div className="w-full max-w-md">
             <Card className="border-0 bg-luxury-black-light/50 backdrop-blur-xl shadow-2xl flex flex-col">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F05dfbcd291304f26915d635b7312e22a%2F5e023d0eb22b48c78d960e5648951664?format=webp&width=800"
                 alt="Maven Genetics Logo"
-                className="w-32 h-36 object-contain pt-3 mx-auto mt-3"
+                className="w-32 h-36 object-contain pt-1.5 mx-auto mt-1.5"
               />
               <CardContent className="flex flex-col px-8 pt-5 pb-8">
                 <h1
+                  className="text-xl font-bold leading-6 mx-auto"
+                  style={{
+                    background:
+                      "linear-gradient(to right, #d4af00, #e6c200, #ffda2b)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                    color: "#e5c354",
+                  }}
+                >
+                  FEED THE MUSE W/ MAVEN
+                </h1>
+                <h2
                   className="text-lg font-bold leading-9 mx-auto"
                   style={{
                     background:
@@ -117,8 +102,8 @@ export default function Index() {
                     color: "#e5c354",
                   }}
                 >
-                  Show Case Connoisseurs!
-                </h1>
+                  <span style={{color: "rgb(255, 255, 255)"}}>Show Case Connoisseurs!</span>
+                </h2>
                 <div className="text-center mb-3">
                   <div className="text-white text-xs font-bold leading-[15px] mb-2">
                     <div></div>
