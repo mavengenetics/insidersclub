@@ -106,7 +106,7 @@ export default function Index() {
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     onSubmit={handleSubmit}
-                    className="space-y-3"
+                    className="space-y-1"
                   >
                     <input
                       type="hidden"
@@ -119,7 +119,7 @@ export default function Index() {
                         <input name="bot-field" />
                       </label>
                     </div>
-                    <div>
+                    <div className="mt-1">
                       <Label
                         htmlFor="name"
                         className="text-white font-semibold"
@@ -254,7 +254,7 @@ export default function Index() {
                     <Button
                       type="submit"
                       className="w-full text-luxury-black font-semibold py-3 text-sm transition-all duration-300 transform hover:scale-105 shadow-lg"
-                      style={{ backgroundColor: "#e5c354" }}
+                      style={{ backgroundColor: "#d0b45d" }}
                     >
                       Submit Application
                     </Button>
