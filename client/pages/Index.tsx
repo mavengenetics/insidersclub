@@ -70,7 +70,7 @@ export default function Index() {
 
       <div className="relative z-10 flex min-h-screen bg-black">
         {/* Left Section - Branding */}
-        <div className="hidden lg:flex lg:w-1/2 flex-col justify-center px-12 xl:px-24 bg-black ml-9">
+        <div className="hidden lg:flex lg:w-1/2 flex-col justify-center px-5 bg-black" style={{marginLeft: '50px'}}>
           <div className="max-w-lg">
             {/* Logo Placeholder - Replace with actual logo */}
             <div className="mb-8">
@@ -92,25 +92,6 @@ export default function Index() {
               <p className="text-lg text-white font-bold leading-5 pb-1.5 mb-1.5">
                 <div />
               </p>
-
-              <div className="space-y-4 pt-3">
-                {[
-                  "Weekly Insiders Newsletter",
-                  "Exclusive Discounts",
-                  "First Access to Product Drops",
-                ].map((feature, index) => (
-                  <div key={index} className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-luxury-gold rounded-full"></div>
-                    <span className="text-white font-semibold">{feature}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="flex items-center space-x-3 mt-4">
-              <div className="w-2 h-2 bg-luxury-gold rounded-full"></div>
-              <span className="text-white font-semibold">
-                Special Event Access
-              </span>
             </div>
           </div>
         </div>
@@ -138,7 +119,7 @@ export default function Index() {
                 >
                   Show Case Connoisseurs!
                 </h1>
-                <div className="text-center mb-3">
+                <div className="text-center mb-3 text-xs leading-[18px]">
                   <div className="text-white text-base font-bold leading-5 mb-2">
                     <div></div>
                   </div>
