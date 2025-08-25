@@ -5,17 +5,13 @@
 [build.environment]
   NODE_VERSION = "18"
 
-# Form handling
-[forms]
-  "maven-insiders" = { action = "/thank-you", subject = "New Maven Insiders Application" }
-
-# SPA redirect rules
+# SPA redirect rules (this is critical for React/Vite apps)
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
-# Form submission redirect
+# Form handling
 [[redirects]]
   from = "/thank-you"
   to = "/?submitted=true"
@@ -29,7 +25,6 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    Content-Security-Policy = "default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self' data:;"
 
 # Cache static assets
 [[headers]]
