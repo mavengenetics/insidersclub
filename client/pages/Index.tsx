@@ -75,26 +75,25 @@ export default function Index() {
             {/* Logo Placeholder - Replace with actual logo */}
             <div className="mb-8">
               <h1
-                className="text-5xl font-bold leading-tight"
+                className="text-4xl font-bold leading-9"
                 style={{
                   color: "#e5c354",
                 }}
               >
-                Maven Insiders
+                FEED <br />
+                THE <br />
+                MUSE <br />
+                WITH <br />
+                MAVEN
               </h1>
             </div>
 
             <div className="space-y-6">
               <p className="text-lg text-white font-bold leading-5 pb-1.5 mb-1.5">
-                <div>
-                  <b>
-                    Join an elite community at the forefront of cannabis
-                    culture.
-                  </b>
-                </div>
+                <div />
               </p>
 
-              <div className="space-y-4 pt-6">
+              <div className="space-y-4 pt-3">
                 {[
                   "Weekly Insiders Newsletter",
                   "Exclusive Discounts",
@@ -127,7 +126,7 @@ export default function Index() {
               />
               <CardContent className="flex flex-col px-8 pt-5 pb-8">
                 <h1
-                  className="text-3xl font-bold leading-9 mx-auto"
+                  className="text-lg font-bold leading-9 mx-auto"
                   style={{
                     background:
                       "linear-gradient(to right, #d4af00, #e6c200, #ffda2b)",
@@ -137,10 +136,14 @@ export default function Index() {
                     color: "#e5c354",
                   }}
                 >
-                  Maven Insiders
+                  Show Case Connoisseurs!
                 </h1>
-                <div className="text-center mb-3 text-white text-2xl font-bold leading-9 pb-1">
-                  Get Access Now
+                <div className="text-center mb-3 text-white text-xl font-bold leading-[18px] pb-1">
+                  FEED THE MUSE WITH MAVEN<br />
+                  • Exclusive Maven merch shipped to you<br />
+                  • Invites to private Maven events<br />
+                  • Early access to new phenos and samplings<br />
+                  Your voice matters — join the Maven circle.
                 </div>
 
                 {!isSubmitted ? (
