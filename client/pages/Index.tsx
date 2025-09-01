@@ -41,7 +41,11 @@ export default function Index() {
         body: new URLSearchParams(formData as any).toString(),
       });
 
-      console.log("Form submission response:", response.status, response.statusText);
+      console.log(
+        "Form submission response:",
+        response.status,
+        response.statusText,
+      );
 
       if (response.ok) {
         setIsSubmitted(true);
@@ -50,7 +54,9 @@ export default function Index() {
           setFormData({ name: "", email: "", location: "", category: "" });
         }, 3000);
       } else {
-        throw new Error(`Form submission failed: ${response.status} ${response.statusText}`);
+        throw new Error(
+          `Form submission failed: ${response.status} ${response.statusText}`,
+        );
       }
     } catch (error) {
       console.error("Form submission error:", error);
@@ -88,7 +94,7 @@ export default function Index() {
               />
               <CardContent className="flex flex-col px-8 pt-5">
                 <h2 className="text-base font-bold leading-[30px] mx-auto text-white">
-                  <span style={{color: "rgb(208, 180, 93)"}}>
+                  <span style={{ color: "rgb(208, 180, 93)" }}>
                     Showcase Connoisseurs!
                   </span>
                 </h2>
