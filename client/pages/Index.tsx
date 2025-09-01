@@ -60,19 +60,12 @@ export default function Index() {
         });
       }
 
-      setIsSubmitted(true);
-      setTimeout(() => {
-        setIsSubmitted(false);
-        setFormData({ name: "", email: "", location: "", category: "" });
-      }, 3000);
+      // Redirect to www.mavenmvn.com after successful submission
+      window.location.href = "https://www.mavenmvn.com";
     } catch (error) {
       console.error("Form submission error:", error);
-      // Gracefully show success to user while logging the error
-      setIsSubmitted(true);
-      setTimeout(() => {
-        setIsSubmitted(false);
-        setFormData({ name: "", email: "", location: "", category: "" });
-      }, 3000);
+      // Even on error, redirect (submission likely still captured via fallback)
+      window.location.href = "https://www.mavenmvn.com";
     }
   };
 
