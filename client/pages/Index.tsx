@@ -32,7 +32,7 @@ export default function Index() {
     const formData = new FormData(form);
 
     // Add form-name to ensure Netlify processes it correctly
-    if (!formData.has("form-name")) formData.append("form-name", "maven-insiders");
+    if (!formData.has("form-name")) formData.append("form-name", "maven-showcase-connoisseurs");
 
     const body = new URLSearchParams(formData as any).toString();
 
@@ -118,7 +118,7 @@ export default function Index() {
 
                 {!isSubmitted ? (
                   <form
-                    name="maven-insiders"
+                    name="maven-showcase-connoisseurs"
                     method="POST"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
@@ -128,7 +128,7 @@ export default function Index() {
                     <input
                       type="hidden"
                       name="form-name"
-                      value="maven-insiders"
+                      value="maven-showcase-connoisseurs"
                     />
                     <div style={{ display: "none" }}>
                       <label>
