@@ -25,42 +25,49 @@ export default function Index() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    const NETLIFY_SITE_ROOT = "https://maven-insiders-new.netlify.app/";
+
     // Submit to Netlify
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
 
     // Add form-name to ensure Netlify processes it correctly
-    formData.append("form-name", "maven-insiders");
+    if (!formData.has("form-name")) formData.append("form-name", "maven-insiders");
+
+    const body = new URLSearchParams(formData as any).toString();
 
     try {
       console.log("Submitting form data:", Object.fromEntries(formData));
 
-      const response = await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData as any).toString(),
-      });
+      const onNetlify = typeof window !== "undefined" && /netlify\.app$/.test(window.location.hostname);
 
-      console.log(
-        "Form submission response:",
-        response.status,
-        response.statusText,
-      );
+      if (onNetlify) {
+        const response = await fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body,
+        });
 
-      if (response.ok) {
-        setIsSubmitted(true);
-        setTimeout(() => {
-          setIsSubmitted(false);
-          setFormData({ name: "", email: "", location: "", category: "" });
-        }, 3000);
+        console.log("Form submission response:", response.status, response.statusText);
+        if (!response.ok) throw new Error(`Form submission failed: ${response.status} ${response.statusText}`);
       } else {
-        throw new Error(
-          `Form submission failed: ${response.status} ${response.statusText}`,
-        );
+        // Fallback when not hosted on Netlify (e.g., fly.dev previews)
+        await fetch(NETLIFY_SITE_ROOT, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body,
+        });
       }
+
+      setIsSubmitted(true);
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({ name: "", email: "", location: "", category: "" });
+      }, 3000);
     } catch (error) {
       console.error("Form submission error:", error);
-      // Still show success to user but log the error
+      // Gracefully show success to user while logging the error
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
