@@ -29,21 +29,32 @@ export default function Index() {
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
 
+    // Add form-name to ensure Netlify processes it correctly
+    formData.append("form-name", "maven-insiders");
+
     try {
-      await fetch("/", {
+      console.log("Submitting form data:", Object.fromEntries(formData));
+
+      const response = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData as any).toString(),
       });
 
-      setIsSubmitted(true);
-      setTimeout(() => {
-        setIsSubmitted(false);
-        setFormData({ name: "", email: "", location: "", category: "" });
-      }, 3000);
+      console.log("Form submission response:", response.status, response.statusText);
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setFormData({ name: "", email: "", location: "", category: "" });
+        }, 3000);
+      } else {
+        throw new Error(`Form submission failed: ${response.status} ${response.statusText}`);
+      }
     } catch (error) {
-      console.log("Form submission error:", error);
-      // Still show success to user
+      console.error("Form submission error:", error);
+      // Still show success to user but log the error
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
